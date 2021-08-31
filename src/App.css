@@ -1,0 +1,100 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+.App h1{
+  margin-bottom: 30px;
+}
+.container{
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  align-items: center;
+}
+.container  header  span{
+  margin-bottom: 10px;
+  display: block;
+}
+.input{
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
+  outline-color: tomato;
+  width: 15rem;
+  margin: 7px 0;
+}
+.button{
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
+  background: darkseagreen;
+  color: #fff;
+  cursor: pointer;
+}
+.completed{
+  text-decoration: line-through;
+  color: #da5757;
+}
+.todo{
+  display: flex;
+  width: 20rem;
+  justify-content: space-around;
+  margin: 15px 0;
+  background: #ececec;
+  padding: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 10%); 
+}
+.todo > div{
+  cursor: pointer;
+}
+.todo button {
+  background: cadetblue;
+  border: none;
+  padding: 7px 12px;
+  margin: 0 6px;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 3px 13px 0 rgb(0 0 0 / 20%);
+  cursor: pointer;
+}
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 0 20px 0;
+}
+.selectInput{
+  width: 17%;
+}
+@media (max-width: 576px) {
+  .input{
+    width: 17rem;
+  }
+  .container{
+    width: 80% !important;
+  }
+  .todo{
+    width:22rem;
+  }
+}
+@media (max-width: 992px) {
+  header{
+    flex-direction: column !important;
+  }
+  .selectInput {
+    width: 55% !important;
+}
+}
